@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      background-color: #a8d5a2;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #d3f0cb;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2e6e3e;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #999;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #8bc98b;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #7ab97a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Get In Touch!</h2>
+    <p>Use the contact form below to get in touch with us!</p>
+    
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="birthdate">Your Birthdate</label>
+      <input type="date" id="birthdate" name="birthdate" value="2000-01-01" required>
+
+      <label for="snack">What type of snack are you</label>
+      <form>
+  <label for="snack">What's your favourite snack (choose wisely) ?</label>
+  <select id="snack" name="snack" required>
+    <option value="">-- Please choose --</option>
+    <option value="kitkat">KitKat</option>
+    <option value="hersheys">Hersheys</option>
+    <option value="pudding">Pudding</option>
+    <option value="dark-chocolate">Dark chocolate</option>
+    <option value="milk-chocolate">Milk chocolate</option>
+    <option value="other">Other</option>
+  </select>
+</form>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+      <label for="website">Website:</label>
+      <input type="text" id="website" name="website" placeholder="">
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="hello">i just wanna have some milk chocolate</option>
+        <option value="feedback">I have some feedback</option>
+        <option value="question">I have a question</option>
+        <option value="touchgrass">Touch some grass lil bro</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here, please."></textarea>
+
+
+      <button type="submit">Send away!</button>
+    </form>
+  </div>
+
+</body>
+</html>
